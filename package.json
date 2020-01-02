@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node test.js"
+  },
   "author": "Lucas Viana",
   "license": "ISC",
   "dependencies": {},
@@ -12,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"this should fail\" && exit 1"
+      "pre-commit": "yarn test"
     }
   }
 }
